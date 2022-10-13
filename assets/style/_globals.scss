@@ -1,0 +1,46 @@
+.container {
+  @include container;
+}
+
+body{
+  overflow-x: hidden;
+  &.modal-overlay{
+    overflow-y: hidden;
+    height: 100vh;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $default-title-font;
+  font-weight: 600;
+  strong {
+    font-weight: 800;
+  }
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 40px 0;
+  font-weight: 600;
+}
+
+p,
+ul,
+li,
+a,
+span,
+button {
+  font: 400 16px / 150% $default-text-font;
+  @include breakpoint(lg-tablet) {
+    font: 400 18px / 150% $default-text-font;
+  }
+}
