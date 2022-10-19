@@ -3,7 +3,7 @@
   <div class="homepage-hero">
     
       <div>
-        <h1>We build <strong>Brands</strong></h1>
+        <h1>We build <strong>Websites</strong></h1>
         <h2>The whole thing without you need to worry about</h2>
         <DefaultButton>Let's book a call</DefaultButton>
       </div>
