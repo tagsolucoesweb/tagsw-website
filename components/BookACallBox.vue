@@ -3,17 +3,14 @@
   <div class="box book-a-call">
     <h2>Let's book a call?</h2>
     <p>
-      Not sure yet if this is what you or your business need. Let’s talk and
-      figure it out. No commitment needed, if I can help you I’ll say. If I
-      can’t I might be able to point a way for you to look exactly what are you
-      looking for.
+      Not sure yet if this is what you or your business need. Let’s talk and figure it out. No commitment needed, if I can help you I’ll say. If I can't, I might be able to point out a way for you to solve your necessity.
     </p>
-    <DefaultButton>Book a Call</DefaultButton>
+    <ContactModalButton>Book a Call</ContactModalButton>
   </div>
 </template>
 
 <script setup>
-import DefaultButton from './DefaultButton.vue'
+import ContactModalButton from './ContactModalButton.vue';
 </script>
 
 <style lang="scss">

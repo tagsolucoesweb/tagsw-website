@@ -10,17 +10,21 @@
             :key="key"
             class="grid-item"
           >
-            <nuxt-img
-              :src="project.image"
-              :title="project.title"
-              :alt="project.title"
-            />
+            <a href="https://www.figma.com/proto/Uaf7txrvoDGCbnhn20enhS/Portifolio?node-id=1%3A2&starting-point-node-id=1%3A2'" target="_blank">
+              <nuxt-img
+                :src="project.image"
+                :title="project.title"
+                :alt="project.title"
+              />
+            </a>
           </div>
         </div>
       </div>
     </div>
     <div class="btn-wrap">
-      <DefaultButton>See more projects</DefaultButton>
+      <DefaultButton :target="'https://www.figma.com/proto/Uaf7txrvoDGCbnhn20enhS/Portifolio?node-id=1%3A2&starting-point-node-id=1%3A2'">
+        See more projects
+      </DefaultButton>
     </div>
     <div class="bg-case">
       <img src="images/bg-cases.png" alt="Case Background">

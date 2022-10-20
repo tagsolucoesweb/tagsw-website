@@ -1,21 +1,13 @@
 <!-- Please remove this file from your project -->
 <template>
   <div class="button">
-    <div class="default-button">
-      <a :href="props.target" target="_blank">
-        <slot />
-      </a>
+    <div class="default-button contact-modal-open">
+      <slot />
     </div>
   </div>
 </template>
 
-<script setup>
-
-const props = defineProps({
-  target: String,
-});
-
-</script>
+<script setup></script>
 
 <style lang="scss">
 .button {

@@ -4,8 +4,8 @@
     
       <div>
         <h1>We build <strong>Websites</strong></h1>
-        <h2>The whole thing without you need to worry about</h2>
-        <DefaultButton>Let's book a call</DefaultButton>
+        <h2>From prototype to a high performance project for your business.</h2>
+        <ContactModalButton>Let's book a call</ContactModalButton>
       </div>
       <div>
         <Lottie
@@ -28,12 +28,12 @@
 
 <script>
 import Lottie from 'vue-lottie/src/lottie.vue'
-import DefaultButton from './DefaultButton.vue'
+import ContactModalButton from './ContactModalButton.vue'
 import * as animationData from '~/assets/animations/tagsw-hero-anim.json'
 
 export default {
   name: 'TagswHomepageHero',
-  components: { DefaultButton, Lottie },
+  components: { Lottie, ContactModalButton },
   data() {
     return {
       anim: null, // for saving the reference to the animation

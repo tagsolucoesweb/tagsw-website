@@ -1,17 +1,17 @@
 <!-- Please remove this file from your project -->
 <template>
   <div class="nav-bar">
-    <nuxt-link class="home-btn" to="/">Home</nuxt-link>
-    <nuxt-link to="/about">About</nuxt-link>
-    <DefaultButton>Chat with us</DefaultButton>
+    <!-- <nuxt-link class="home-btn" to="/">Home</nuxt-link> -->
+    <!-- <nuxt-link to="/about">About</nuxt-link> -->
+    <ContactModalButton>Chat with us</ContactModalButton>
   </div>
 </template>
 
 <script>
-import DefaultButton from './DefaultButton.vue'
+import ContactModalButton from './ContactModalButton.vue';
 export default {
   name: 'TagswNavbar',
-  components: { DefaultButton },
+  components: { ContactModalButton },
 }
 </script>
 
