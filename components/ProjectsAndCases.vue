@@ -27,7 +27,7 @@
       </DefaultButton>
     </div>
     <div class="bg-case">
-      <img src="images/bg-cases.png" alt="Case Background">
+      <nuxt-img src="images/bg-cases.png" alt="Case Background" />
     </div>
   </div>
 </template>

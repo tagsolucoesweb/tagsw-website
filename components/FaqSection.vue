@@ -9,7 +9,7 @@
       <!-- question loop -->
     </ul>
     <div class="bg-faq">
-      <img src="images/bg-faq.png" alt="Case Background">
+      <nuxt-img src="images/bg-faq.png" alt="Case Background" />
     </div>
   </div>
 </template>

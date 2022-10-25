@@ -18,10 +18,10 @@
       </div>
     
     <div class="bg-hero">
-      <img src="images/bg-hero.png" alt="tagsw">
+      <nuxt-img src="images/bg-hero.png" alt="tagsw" />
     </div>
     <div class="bg-hero-mobile">
-      <img src="images/bg-hero-mobile.png" alt="tagsw">
+      <nuxt-img src="images/bg-hero-mobile.png" alt="tagsw" />
     </div>
   </div>
 </template>
