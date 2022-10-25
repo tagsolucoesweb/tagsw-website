@@ -1,7 +1,7 @@
 <!-- Please remove this file from your project -->
 <template>
   <div class="trusted-by">
-    <h3>{{ content.headline }}</h3>
+    <h3>{{ $t(content.headline) }}</h3>
     <div class="costumer-grid-outer">
       <ul class="costumer-grid-inner">
         <li v-for="(costumerObj, key) in content.costumers" :key="key">

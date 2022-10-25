@@ -1,6 +1,6 @@
 <template>
     <div class="contact-thanks">
-        <h3>Ops! Something went wrong. You can try again or choose some other way to contact us.</h3>
+        <h3>{{$t("Ops! Something went wrong. You can try again or choose some other way to contact us.")}}</h3>
         <span @click="$emit('reset-form', true)">Start a new contact</span>
     </div>
 </template>

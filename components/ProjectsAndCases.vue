@@ -1,7 +1,7 @@
 <!-- Please remove this file from your project -->
 <template>
   <div class="default-page-section projects-and-cases">
-    <h2>{{ content.headline }}</h2>
+    <h2>{{ $t(content.headline) }}</h2>
     <div class="projects-grid-outer">
       <div class="projects-grid-inner">
         <div class="grid">
@@ -23,7 +23,7 @@
     </div>
     <div class="btn-wrap">
       <DefaultButton :target="'https://www.figma.com/proto/Uaf7txrvoDGCbnhn20enhS/Portifolio?node-id=1%3A2&starting-point-node-id=1%3A2'">
-        See more projects
+        {{ $t("See more projects") }}
       </DefaultButton>
     </div>
     <div class="bg-case">

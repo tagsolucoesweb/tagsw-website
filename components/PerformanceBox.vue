@@ -1,10 +1,10 @@
 <!-- Please remove this file from your project -->
 <template>
   <div class="box performance">
-    <h2>High Performance</h2>
+    <h2>{{ $t("High Performance") }}</h2>
     
     <p>
-      We build everything to not just be beautiful but to achieve the higher performance standards. All websites and apps are lightning fast tested on multiple page load tools.
+      {{ $t("We build everything to not just be beautiful but to achieve the higher performance standards. All websites and apps are lightning fast tested on multiple page load tools.") }}
     </p>
 
     <div>

@@ -1,16 +1,16 @@
 <!-- Please remove this file from your project -->
 <template>
     <div class="email-form-wrap">
-        <h4>Fill your e-mail above and, if you want to, give some details of what are your needs. I'll answer to you in a heart bit.</h4>
+        <h4>{{$t("Fill your e-mail above and, if you want to, give some details of what are your needs. I'll answer to you in a heart bit.")}}</h4>
         <form ref="form" class="form" @submit.prevent="sendMail">
             <div class="form-group">
                 <input name="email" placeholder="E-mail" type="email" :value="inputFieldReset" required>
             </div>
             <div class="form-group">
-                <textarea class="text-area" name="message" placeholder="Message" type="text" :value="inputFieldReset"></textarea>
+                <textarea class="text-area" name="message" :placeholder="$t('Message')" type="text" :value="inputFieldReset"></textarea>
             </div>
             <div class="form-group">
-            <input class="submit" type="submit" name="send" />
+            <input class="submit" type="submit" name="send" :value="$t('Submit')" />
             </div>
         </form>
     </div>
@@ -24,24 +24,23 @@
         emits: [ 'submit-form' ],
 
         setup() {
-            const form = ref(null);
             const inputFieldReset = ref(null);
-
-            const sendMail = () => {
-                emailjs.sendForm('service_9uu6iii', 'template_pk8dmj2', form.value, '9WBwKWhI1bWTnCz--')
+            
+            return{
+                inputFieldReset,
+            }
+        },
+        
+        methods: {
+            sendMail() {                
+                emailjs.sendForm('service_9uu6iii', 'template_pk8dmj2', this.$refs.form, '9WBwKWhI1bWTnCz--')
                 .then(() => {
                     this.$emit('submit-form', true)
                 }, () => {
                     this.$emit('submit-form', false)
                 }); 
             }
-
-            return{
-                form,
-                inputFieldReset,
-                sendMail
-            }
-        },
+        }
 
     }
 </script>
@@ -70,7 +69,7 @@
         gap:40px;
         align-items: center;
         @include breakpoint(sm-tablet){
-            align-items: flex-start;    
+            align-items: center;    
         }
         .form-group{
             width:75%;

@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="copyright">All rights reserved to TagSW® 2022</div>
+    <div class="copyright">{{ $t("All rights reserved to") }} TagSW® 2022</div>
   </footer>
 </template>
 

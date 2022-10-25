@@ -2,7 +2,7 @@
 <template>
   <div class="faq-item">
     <div class="question" @click="expanded = !expanded">
-      <span class="question">{{ props.faqItem.question }}</span>
+      <span class="question">{{ $t(props.faqItem.question) }}</span>
       <span
         :class="expanded ? 'content-open' : 'content-close'"
         class="icon-wrap"
@@ -27,7 +27,7 @@
       @before-leave="start"
       @after-leave="end"
     >
-      <div v-if="expanded" class="answer">{{ props.faqItem.answer }}</div>
+      <div v-if="expanded" class="answer">{{ $t(props.faqItem.answer) }}</div>
     </transition>
   </div>
 </template>

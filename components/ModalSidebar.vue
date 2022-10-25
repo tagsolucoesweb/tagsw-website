@@ -2,8 +2,8 @@
 <div class="modal-sidebar">
     <div class="modal-sidebar-inner">
         <div class="modal-sb-components">
-            <h3>Tested Components</h3>
-            <p>We develop reusable chunks of code and compose a library of components. This allows us to reuse the code, with a custom layout, and make sure that the functionality doesn't break.</p>
+            <h3>{{$t("Tested Components")}}</h3>
+            <p>{{$t("We develop reusable chunks of code and compose a library of components. This allows us to reuse the code, with a custom layout, and make sure that the functionality doesn't break.")}}</p>
             <svg width="462" height="462" viewBox="0 0 462 462" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M115.254 57.6268V115.254H57.6269V57.6268H115.254ZM28.8135 28.8134V144.067H144.067V28.8134H28.8135Z" fill="black"/>
                 <path d="M259.321 100.847V158.474H201.694V100.847H259.321ZM172.88 72.0336V187.287H288.134V72.0336H172.88Z" fill="black"/>
@@ -12,8 +12,8 @@
             </svg>
         </div>
         <div>
-            <h3>High Performance</h3>
-            <p>Achieve high performance on your web project with top technology and proven code</p>
+            <h3>{{$t('High Performance')}}</h3>
+            <p>{{$t("Achieve high performance on your web project with top technology and proven code")}}</p>
             <div>
               <Lottie
                     :options="defaultOptions"

@@ -1,7 +1,7 @@
 <template>
     <div class="contact-thanks">
-        <h3>Thanks for contacting us! You'll heard about us in a short time. =)</h3>
-        <span @click="$emit('reset-form')">New Contact</span>
+        <h3>{{$t("Thanks for contacting us! You'll heard about us in a short time. =)")}}</h3>
+        <span @click="$emit('reset-form')">{{$t("New Contact")}}</span>
     </div>
 </template>
 <script setup>

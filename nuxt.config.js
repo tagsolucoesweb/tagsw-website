@@ -47,6 +47,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
+    '@nuxtjs/i18n',
   ],
 
   styleResources: {
@@ -61,4 +62,27 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+  
+  i18n: {
+    /* module options */
+    locales: ['en', 'pt_BR'],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en'
+    },
+    langDir: 'locales/',
+    locales: [
+      {
+        code: 'en',
+        file: 'en.json',
+        iso: 'en'
+      },
+      {
+        code: 'br',
+        file: 'ptBR.json',
+        iso: 'pt_BR'
+      }
+    ] 
+  },
+  
 }

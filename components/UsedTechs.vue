@@ -1,7 +1,7 @@
 <!-- Please remove this file from your project -->
 <template>
   <div class="default-page-section technologies">
-    <h2>{{ content.headline }}</h2>
+    <h2>{{ $t(content.headline) }}</h2>
     <div class="tech-grid-outer">
       <ul class="tech-grid-inner">
         <li v-for="(techObj, key) in content.techs" :key="key">

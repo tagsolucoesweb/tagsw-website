@@ -1,7 +1,7 @@
 <!-- Please remove this file from your project -->
 <template>
   <div class="default-page-section faq">
-    <h2>{{ content.headline }}</h2>
+    <h2>{{ $t(content.headline) }}</h2>
     <ul class="faq-list">
       <li v-for="(faqObj, key) in content.questions" :key="key">
         <FaqItem :faq-item="faqObj" />

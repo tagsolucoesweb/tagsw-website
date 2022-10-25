@@ -3,7 +3,13 @@
   <div class="nav-bar">
     <!-- <nuxt-link class="home-btn" to="/">Home</nuxt-link> -->
     <!-- <nuxt-link to="/about">About</nuxt-link> -->
-    <ContactModalButton>Chat with us</ContactModalButton>
+    <nuxt-link
+      v-for="locale in availableLocales"
+      :key="locale.code"
+      :to="switchLocalePath(locale.code)">
+        {{ locale.code }}
+      </nuxt-link>
+    <ContactModalButton>{{ $t("Chat with us") }}</ContactModalButton>
   </div>
 </template>
 
@@ -12,6 +18,11 @@ import ContactModalButton from './ContactModalButton.vue';
 export default {
   name: 'TagswNavbar',
   components: { ContactModalButton },
+  computed: {
+    availableLocales () {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+    }
+  }
 }
 </script>
 

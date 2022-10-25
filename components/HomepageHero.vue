@@ -3,9 +3,9 @@
   <div class="homepage-hero">
     
       <div>
-        <h1>We build <strong>Websites</strong></h1>
-        <h2>From prototype to a high performance project for your business.</h2>
-        <ContactModalButton>Let's book a call</ContactModalButton>
+        <h1>{{ $t('We build') }} <strong>Websites</strong></h1>
+        <h2>{{ $t('From prototype to a high performance project for your business.') }}</h2>
+        <ContactModalButton>{{ $t("Let's book a call") }}</ContactModalButton>
       </div>
       <div>
         <Lottie

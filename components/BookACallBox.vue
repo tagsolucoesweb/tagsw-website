@@ -1,11 +1,11 @@
 <!-- Please remove this file from your project -->
 <template>
   <div class="box book-a-call">
-    <h2>Let's book a call?</h2>
+    <h2>{{ $t("Let's book a call") }}?</h2>
     <p>
-      Not sure yet if this is what you or your business need. Let’s talk and figure it out. No commitment needed, if I can help you I’ll say. If I can't, I might be able to point out a way for you to solve your necessity.
+      {{ $t("Not sure yet if this is what you or your business need. Let’s talk and figure it out. No commitment needed, if I can help you I’ll say. If I can't, I might be able to point out a way for you to solve your necessity.") }}
     </p>
-    <ContactModalButton>Book a Call</ContactModalButton>
+    <ContactModalButton>{{ $t("Book a Call") }}</ContactModalButton>
   </div>
 </template>
 
