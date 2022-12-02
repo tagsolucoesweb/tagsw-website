@@ -2,6 +2,10 @@ export const content = {
   headline: 'Trusted By',
   costumers: [
     {
+      title: 'Plano A',
+      image: 'images/planoa-tagsw.png',
+    },
+    {
       title: 'MAAC Tech',
       image: 'images/maactech-tagsw.png',
     },
@@ -26,12 +30,8 @@ export const content = {
       image: 'images/drconecta-tagsw.png',
     },
     {
-      title: 'Plano A',
-      image: 'images/planoa-tagsw.png',
-    },
-    {
       title: 'Cacilda Filmes',
       image: 'images/cacilda-tagsw.png',
-    },
+    }
   ],
 }
