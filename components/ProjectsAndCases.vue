@@ -10,7 +10,7 @@
             :key="key"
             class="grid-item"
           >
-            <a href="https://www.figma.com/proto/Uaf7txrvoDGCbnhn20enhS/Portifolio?node-id=1%3A2&starting-point-node-id=1%3A2'" target="_blank">
+            <a href="tagsw-portifolio.pdf" target="_blank">
               <nuxt-img
                 :src="project.image"
                 :title="project.title"
@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="btn-wrap">
-      <DefaultButton :target="'https://www.figma.com/proto/Uaf7txrvoDGCbnhn20enhS/Portifolio?node-id=1%3A2&starting-point-node-id=1%3A2'">
+      <DefaultButton :target="'tagsw-portifolio.pdf'">
         {{ $t("See more projects") }}
       </DefaultButton>
     </div>
